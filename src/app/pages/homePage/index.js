@@ -18,7 +18,7 @@ export const HomePage = () =>{
         setBtnNoActive("#064789")
     }
     const handleSubmit = ()=>{
-        fetch(`http://api.weatherapi.com/v1/current.json?key=e76e75c1abd64638863115714222809&q=${city}&lang=pt`) 
+        fetch(`http://api.weatherapi.com/v1/current.json?key={chave}&q=${city}&lang=pt`) 
             .then((reponse)=>{
                 if(reponse.status === 200){
                     return reponse.json()
